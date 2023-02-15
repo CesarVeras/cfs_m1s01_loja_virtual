@@ -1,0 +1,74 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+	margin: 0;
+	background-image: linear-gradient(to right, red 0%, orange 50%, yellow 100%);
+	font-family: system-ui,sans-serif;
+	font-size: 10px;
+}
+
+img {
+	max-width: 100%;
+}
+
+.card-list {
+	max-width: 80%;
+	margin-inline: auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 1rem;
+
+}
+
+.card {
+	background-color: #ececec;
+	padding: 1rem;
+	border-radius: 5px;
+	box-shadow: 0 0 5px 1px rgba(0 0 0 / .4);
+}
+
+.card img {
+	border-radius: 5px;
+}
+
+.card .nome {
+	font-size: 1rem;
+	text-transform: uppercase;
+	color: #c98811;
+	border-bottom: 2px solid #c98811;
+}
+
+.card .descricao {
+	font-size: 1rem;
+	font-weight: 300;
+}
+
+.card .valor {
+	font-size: 1.2rem;
+	font-weight: 900;
+	color: #03aa03;
+}
+
+.card .botoes {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+	gap: .25rem;
+}
+
+.botoes button {
+	border: 2px solid transparent;
+	border-radius: 5px;
+}
+
+.botoes .comprar {
+	background-color: #00ff00;
+	border-color: #03aa03;
+}
+
+.botoes .adicionar {
+	background-color: #ececec;
+	border-color: #858585;
+}
