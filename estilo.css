@@ -16,6 +16,8 @@ img {
 	max-width: 100%;
 }
 
+/* index */
+
 .card-list {
 	max-width: 80%;
 	display: grid;
@@ -62,9 +64,11 @@ img {
 	gap: .25rem;
 }
 
-.botoes button {
+.botoes :is(button, a) {
 	border: 2px solid transparent;
 	border-radius: 5px;
+	cursor: pointer;
+	font-size: .8rem;
 }
 
 .botoes .comprar {
@@ -73,6 +77,60 @@ img {
 }
 
 .botoes .adicionar {
+	text-align: center;
+	color: inherit;
+	display: block;
+	text-decoration: none;
 	background-color: #dcdcdc;
 	border-color: #acacac;
+}
+
+/* carrinho */
+
+.carrinho {
+	background-color: #ececec;
+	padding: 2rem;
+	border-radius: 5px;
+	box-shadow: 0 0 5px 1px rgba(0 0 0 / .4);
+}
+
+h2 {
+	font-size: 1.9rem;
+}
+
+table, th, td {
+	border: 1px solid #acacac;
+	border-collapse: collapse;
+}
+
+th, td {
+	font-size: 1.2rem;
+}
+
+td, th {
+	padding: .5rem;
+}
+
+th {
+	text-align: left;
+}
+
+td img {
+	width: 100px;
+	height: 75px;
+	object-fit: cover;
+	vertical-align: middle;
+}
+
+.botoes.alternativo {
+	width: 100%;
+	display: grid;
+	justify-items: right;
+}
+
+button.maior {
+	padding: 1rem;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	margin-top: 1rem;
 }
