@@ -88,6 +88,7 @@ img {
 /* carrinho */
 
 .carrinho {
+	margin: 2rem;
 	background-color: #ececec;
 	padding: 2rem;
 	border-radius: 5px;
