@@ -8,6 +8,8 @@ body {
 	background-image: linear-gradient(to right, red 0%, orange 50%, yellow 100%);
 	font-family: system-ui,sans-serif;
 	font-size: 10px;
+	display: grid;
+	place-items: center;
 }
 
 img {
@@ -16,7 +18,6 @@ img {
 
 .card-list {
 	max-width: 80%;
-	margin-inline: auto;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 	gap: 1rem;
@@ -32,6 +33,9 @@ img {
 
 .card img {
 	border-radius: 5px;
+	width: 100%;
+	height: 150px;
+	object-fit: cover;
 }
 
 .card .nome {
@@ -64,11 +68,11 @@ img {
 }
 
 .botoes .comprar {
-	background-color: #00ff00;
-	border-color: #03aa03;
+	background-color: #e49b15;
+	border-color: #c98811;
 }
 
 .botoes .adicionar {
-	background-color: #ececec;
-	border-color: #858585;
+	background-color: #dcdcdc;
+	border-color: #acacac;
 }
